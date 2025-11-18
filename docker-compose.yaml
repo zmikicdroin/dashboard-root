@@ -3,8 +3,8 @@ version: '3.8'
 services:
   web:
     build: .
-    ports:
-      - "5000:5000"
+    expose:
+      - "5000"
     volumes:
       - ./bookmarks.db:/app/bookmarks.db
       - ./static/screenshots:/app/static/screenshots
